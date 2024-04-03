@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="taller_menu_root" name="Taller Mecanico">
+        <menuitem id="taller_first_level_menu1" name="Registros">
+            <menuitem id="taller_model_menu11_action" action="taller_registro_action"/>
+        </menuitem>
+        <!-- <menuitem id="taller_first_level_menu2" name="Configuración">
+            <menuitem id="taller_model_menu21_action" action="taller_registro_tipo_action"/>
+            <menuitem id="taller_model_menu22_action" action="taller_registro_mecanico_action"/>
+        </menuitem> -->
+    </menuitem>
+</odoo>
