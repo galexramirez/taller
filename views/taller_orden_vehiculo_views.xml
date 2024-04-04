@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="taller_orden_vehiculo_action" model="ir.actions.act_window">
+        <field name="name">Vehiculos</field>
+        <field name="res_model">taller.orden.vehiculo</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

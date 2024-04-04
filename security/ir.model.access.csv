@@ -1,2 +1,5 @@
 "id","name","model_id/id","group_id/id","perm_read","perm_write","perm_create","perm_unlink"
-"access_taller_registro","access_taller_registro","model_taller_registro","base.group_user",1,1,1,1
+"access_taller_orden","access_taller_orden","model_taller_orden","base.group_user",1,1,1,1
+"access_taller_orden_vehiculo","access_taller_orden_vehiculo","model_taller_orden_vehiculo","base.group_user",1,1,1,1
+"access_taller_orden_tipo_servicio","access_taller_orden_tipo_servicio","model_taller_orden_tipo_servicio","base.group_user",1,1,1,1
+"access_taller_orden_tipo_mantenimiento","access_taller_orden_tipo_mantenimiento","model_taller_orden_tipo_mantenimiento","base.group_user",1,1,1,1
