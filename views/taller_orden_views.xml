@@ -1,5 +1,20 @@
 <?xml version="1.0"?>
 <odoo>
+    <record id="taller_orden_view_tree" model="ir.ui.view">
+        <field name="name">taller.orden.tree</field>
+        <field name="model">taller.orden</field>
+        <field name="arch" type="xml">
+            <tree string="Ordenes de Reparacion">
+                <field name="id"/>
+                <field name="cliente"/>
+                <field name="vehiculo_id" />
+                <field name="fecha_apertura" string="Fecha de Apertura" />
+                <field name="fecha_cierre" string="Fecha de Cierre" />
+                <field name="estado" />
+            </tree>
+        </field>
+    </record>
+
     <record id="taller_orden_action" model="ir.actions.act_window">
         <field name="name">Reparación</field>
         <field name="res_model">taller.orden</field>

@@ -8,7 +8,7 @@ class Orden(models.Model):
     _name = "taller.orden"
     _description = "Orden de Reparación"
     
-    fecha = fields.Datetime(string="Fecha y Hora", required=True)
+    fecha_apertura = fields.Datetime(string="Fecha y Hora de Apertura", required=True)
     duracion = fields.Datetime(string="Duración", required=True)
     tipo_servicio_id = fields.Many2one("taller.orden.tipo.servicio", string="Tipo de Servicio", required=True)
     tipo_mantenimiento_id = fields.Many2one("taller.orden.tipo.mantenimiento", string="Tipo de Mantenimiento")
@@ -21,4 +21,6 @@ class Orden(models.Model):
     asistente_id = fields.Many2one("res.users", string="Asistente Lavado Asignado", required=True)
     sintomas = fields.Char(string="Sintomas")
     prueba_manejo = fields.Boolean(string="Prueba de Manejo")
+    fecha_cierre = fields.Datetime(string="Fecha y Hora de Cierre")
+    estado = fields.Selection(string="Estado", selection=[('en cotizacion', 'En Cotizacion'), ('cierre', 'Cierre'), ('check-in','Check-In'), ('check-in','Check-In')], default="en cotizacion")
     
